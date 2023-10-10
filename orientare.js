@@ -11,12 +11,11 @@ function onDeviceOrientation(evt) {
 
     context.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Calculați raza cercului în funcție de valoarea lui gamma
-    var radius = 50 + Math.abs(gamma) * 2; // Ajustați factorul de scalare aici
+    var radius = 50 + Math.abs(gamma) * 2;
 
     context.beginPath();
     context.arc(centerX, centerY, radius, 0, 2 * Math.PI);
-    context.fillStyle = "#6A0888"; // Schimbați culoarea după preferințe
+    context.fillStyle = "#6A0888";
     context.fill();
     context.stroke();
 }
